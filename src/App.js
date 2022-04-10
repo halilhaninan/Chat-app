@@ -125,7 +125,7 @@ function App() {
 
   setTimeout(
     () => setMessage(JSON.parse(localStorage.getItem("messages"))),
-    20000
+    1000
   );
 
   const chatParent = useRef(null);
@@ -246,19 +246,7 @@ function App() {
                         {message.map((item, index) => (
                           <li key={index} className="clearfix">
                             <div className="message-data text-left">
-                              <img
-                                src={
-                                  avatar[
-                                    userList.indexOf(
-                                      userList.find(
-                                        (sitem) =>
-                                          sitem.nickName === item.nickName
-                                      )
-                                    )
-                                  ].nickName
-                                }
-                                alt="avatar"
-                              />
+                              {item.nickName}
 
                               <span
                                 style={{ fontSize: 12 }}
