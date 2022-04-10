@@ -1,4 +1,4 @@
-# React Native chat app.
+# React chat app.
 
 A very simple responsive web app that looks good-enough in mobile and desktop. It’s an app to chat  
 
