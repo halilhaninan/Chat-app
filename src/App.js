@@ -123,10 +123,10 @@ function App() {
     setShowChat(true);
   };
 
-  setTimeout(
-    () => setMessage(JSON.parse(localStorage.getItem("messages"))),
-    1000
-  );
+  setTimeout(() => {
+    const newMessages = JSON.parse(localStorage.getItem("messages"));
+    Boolean(newMessages) && setMessage(newMessages);
+  }, 1000);
 
   const chatParent = useRef(null);
 
