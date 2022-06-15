@@ -2,6 +2,9 @@
 
 A very simple responsive web app that looks good-enough in mobile and desktop. It’s an app to chat  
 
+## Live demo : 
+
+https://chat-app-nine-indol.vercel.app/
 ## To run : 
 
  - npm install
